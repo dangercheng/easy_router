@@ -1,8 +1,8 @@
 name: easy_router
-description: A new Flutter package project.
+description: easy router for flutter
 version: 0.0.1
-author:
-homepage:
+author: dandj <dangercheng@qq.com>
+homepage: https://github.com/dangercheng/easy_router
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
@@ -10,8 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  source_gen: '>=0.8.0'
-  mustache4dart: '>=3.0.0-dev.1.0'
+  source_gen: ^0.8.0
+  mustache4dart: ^3.0.0-dev.1.0
 
 dev_dependencies:
 
