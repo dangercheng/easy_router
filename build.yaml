@@ -1,0 +1,28 @@
+# Read about `build.yaml` at https://pub.dartlang.org/packages/build_config
+targets:
+  $default:
+    builders:
+      easy_router|route_parse_builder:
+        enabled: true
+        generate_for:
+          exclude: ['**.internal.dart']
+      easy_router|router_builder:
+        enabled: true
+        generate_for:
+          exclude: ['**.internal.dart']
+
+builders:
+  router_builder:
+    import: 'package:easy_router/builder.dart'
+    builder_factories: ['routerBuilder']
+    build_extensions: { '.router.dart': ['.internal.dart'] }
+    auto_apply: root_package
+    build_to: source
+
+  route_parse_builder:
+    import: 'package:easy_router/builder.dart'
+    builder_factories: ['routeParseBuilder']
+    build_extensions: { '.dart': ['.empty.dart'] }
+    auto_apply: root_package
+    runs_before: ['easy_router|router_builder']
+    build_to: source
