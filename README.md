@@ -1,5 +1,5 @@
 # easy_router
-简单的路由映射解析方案，实现路由解析，参数赋值，使用简单。
+借鉴闲鱼[annotation_route](https://github.com/alibaba-flutter/annotation_route)，作为学习简单的路由映射解析方案，实现路由解析，参数赋值，使用简单。
 
 使用@EasyRoute来注解需要加入Router的page, url作为page的唯一标识，例如
 ```
